@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số nguyên dương a ");
+    let b = +prompt("Nhập số nguyên dương b");
+    let sumOdd = 0;
+    let sumEven = 0;
+    for (let i = a; i <= b; i++) {
+        if (i % 2 !== 0){
+            sumEven += i;
+
+        }else {
+            sumOdd += i;
+        }
+
+    }
+    document.write(` Tổng các số chẵn nằm giữa ${a} và ${b} là: ${sumEven}`);
+    document.write(` Tổng các số lẻ nằm giữa ${a} và ${b} là: ${sumOdd}`);
+</script>
+</body>
+</html>
